@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vox Idiomas — Seja uma pessoa 100% preparada para qualquer ocasião</title>
+  <meta name="description" content="Vox Idiomas: escola de idiomas em Chapecó-SC. Aulas de inglês e espanhol para viagens, negócios e turmas online ao vivo.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg navbar-vox sticky-top py-3">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="Logomarca Vox Idiomas">
+      Vox Idiomas
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="#empresa">Empresa</a></li>
+        <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <a class="btn btn-vox-nav btn-sm" href="https://wa.me/5551995543079" target="_blank" rel="noopener">
+            <i class="bi bi-whatsapp"></i> Fale conosco
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== CARROSSEL / HERO ===================== -->
+<div id="heroCarousel" class="carousel slide carousel-vox" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active hero-slide-1">
+      <div class="d-flex align-items-center justify-content-center h-100 p-4">
+        <img src="images/logo.png" alt="Logomarca Vox Idiomas" class="mh-100 mw-100 rounded shadow">
+      </div>
+      <div class="carousel-caption-vox" style="pointer-events:none;">
+        <div class="eyebrow">Vox Idiomas · Chapecó-SC</div>
+        <h1>Seja uma pessoa 100% preparada para qualquer ocasião</h1>
+        <p>Aulas de conversação real para viagens, carreira e negociações internacionais — sem travar na hora de falar.</p>
+      </div>
+    </div>
+    <div class="carousel-item hero-slide-2">
+      <div class="d-flex align-items-center justify-content-center h-100 p-4">
+        <img src="images/servicos/corporativo.png" alt="Logo do curso Business English" class="mh-100 mw-100 rounded shadow">
+      </div>
+      <div class="carousel-caption-vox" style="pointer-events:none;">
+        <div class="eyebrow">Promoção de setembro</div>
+        <h1>Matrícula com 15% de desconto nas turmas de Business English</h1>
+        <p>Prepare-se para reuniões e negociações internacionais com nossa metodologia focada em cenários reais.</p>
+      </div>
+    </div>
+    <div class="carousel-item hero-slide-3">
+      <div class="d-flex align-items-center justify-content-center h-100 p-4">
+        <img src="images/servicos/online-logo.png" alt="Logo EAD Idiomas, aulas online ao vivo" class="mh-100 mw-100 rounded shadow">
+      </div>
+      <div class="carousel-caption-vox" style="pointer-events:none;">
+        <div class="eyebrow">Flexibilidade total</div>
+        <h1>Aulas ao vivo, de onde você estiver</h1>
+        <p>Turmas online com professores nativos e bilíngues, sem sair de casa ou do escritório.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+
+<!-- ===================== CATÁLOGO DE SERVIÇOS ===================== -->
+<section id="servicos" class="section-vox">
+  <div class="container">
+    <div class="section-label">Nossos cursos</div>
+    <h2 class="mb-3">Um programa para cada objetivo</h2>
+    <p class="section-lede mb-5">Da mala pronta para a viagem à sala de reunião internacional, cada curso da Vox Idiomas foi desenhado para tirar você do papel e colocar você na conversa.</p>
+
+    <div class="row g-4">
+      <!-- Serviço 1 -->
+      <div class="col-md-4">
+        <div class="card card-servico">
+          <img src="images/servicos/viagens-mundo.png" class="card-img-top" alt="Ilustração de globo com bandeiras representando idiomas para viagens">
+          <div class="card-body d-flex flex-column">
+            <h3 class="h5">Idiomas para Viagens e Turismo</h3>
+            <p class="text-muted small flex-grow-1">Vocabulário e expressões essenciais para aeroportos, hotéis, restaurantes, compras e imigração — fale com independência em qualquer destino.</p>
+            <div class="preco mb-3">R$ 480 <small class="fs-6 text-muted fw-normal">/ curso de 4 semanas</small></div>
+            <a href="servico-viagens.html" class="btn btn-vox-outline w-100">Solicitar orçamento</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Serviço 2 -->
+      <div class="col-md-4">
+        <div class="card card-servico">
+          <img src="images/servicos/corporativo.png" class="card-img-top" alt="Logo Business English, curso de inglês corporativo">
+          <div class="card-body d-flex flex-column">
+            <h3 class="h5">Business English (Idiomas Corporativos)</h3>
+            <p class="text-muted small flex-grow-1">Termos técnicos de negócios, apresentações, reuniões internacionais e e-mails corporativos — para atuar em multinacionais com propriedade.</p>
+            <div class="preco mb-3">R$ 950 <small class="fs-6 text-muted fw-normal">/ pacote de 8 semanas</small></div>
+            <a href="servico-corporativo.html" class="btn btn-vox-outline w-100">Solicitar orçamento</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Serviço 3 -->
+      <div class="col-md-4">
+        <div class="card card-servico">
+          <img src="images/servicos/online-logo.png" class="card-img-top" alt="Logo EAD Idiomas, aulas online ao vivo">
+          <div class="card-body d-flex flex-column">
+            <h3 class="h5">Aulas Online e EaD ao Vivo</h3>
+            <p class="text-muted small flex-grow-1">Todo o método presencial transportado para videoconferências em tempo real, com flexibilidade total de horário.</p>
+            <div class="preco mb-3">R$ 320 <small class="fs-6 text-muted fw-normal">/ mês</small></div>
+            <a href="servico-online.html" class="btn btn-vox-outline w-100">Solicitar orçamento</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EMPRESA ===================== -->
+<section id="empresa" class="section-vox section-vox-alt">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <div class="section-label">Quem somos</div>
+        <h2 class="mb-4">Vox Idiomas</h2>
+        <p>A Vox Idiomas nasceu de uma necessidade muito comum: pessoas que querem conhecer lugares novos fora do seu país, ou melhorar o currículo, e esbarram na dificuldade de falar outras línguas. Dessas dores, criamos a Vox Idiomas para que todos possam estar prontos — seja para viajar, seja para o trabalho.</p>
+        <p>Rompendo com as abordagens tradicionais e puramente gramaticais do mercado, nossa metodologia foca em cenários reais e na superação do medo de falar em público, com programas customizados para estudantes e executivos.</p>
+
+        <div class="accordion accordion-vox mt-4" id="accordionEmpresa">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMissao">
+                Missão
+              </button>
+            </h2>
+            <div id="collapseMissao" class="accordion-collapse collapse show" data-bs-parent="#accordionEmpresa">
+              <div class="accordion-body">Fazer com que todos tenham segurança em falar fluentemente outro idioma.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVisao">
+                Visão
+              </button>
+            </h2>
+            <div id="collapseVisao" class="accordion-collapse collapse" data-bs-parent="#accordionEmpresa">
+              <div class="accordion-body">Ter uma Vox Idiomas em cada estado, acessível para qualquer pessoa.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseValores">
+                Valores
+              </button>
+            </h2>
+            <div id="collapseValores" class="accordion-collapse collapse" data-bs-parent="#accordionEmpresa">
+              <div class="accordion-body">
+                <ul class="mb-0">
+                  <li><strong>Ética:</strong> transparência e honestidade em todas as relações.</li>
+                  <li><strong>Foco no cliente:</strong> o cliente é a prioridade em cada decisão.</li>
+                  <li><strong>Inovação:</strong> buscar sempre novas e melhores formas de fazer as coisas.</li>
+                  <li><strong>Comprometimento:</strong> entregar o que foi prometido com excelência.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="list-unstyled mt-4">
+          <li class="mb-2"><i class="bi bi-geo-alt-fill" style="color:var(--vox-primary)"></i> Avenida Nereu Ramos, nº 3777-D, Bairro Seminário, Chapecó - SC, CEP 89813-000</li>
+          <li><i class="bi bi-telephone-fill" style="color:var(--vox-primary)"></i> (51) 99554-3079</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="ratio ratio-4x3 shadow-sm rounded overflow-hidden mb-4">
+          <iframe src="https://www.google.com/maps?q=Avenida+Nereu+Ramos+3777,+Semin%C3%A1rio,+Chapec%C3%B3+-+SC,+89813-000&output=embed" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização da Vox Idiomas no Google Maps"></iframe>
+        </div>
+
+        <h3 class="h5 mb-3">Nossos profissionais</h3>
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="card-professor text-center">
+              <img src="images/professores/leticia.jpg" alt="Foto de Letícia Dornelles">
+              <h4 class="h6 mt-2 mb-0">Letícia Dornelles</h4>
+              <div class="cargo">Coordenadora Pedagógica</div>
+              <p class="small text-muted">8 anos de ensino executivo de idiomas. Cambridge CELTA e TOEFL iBT 115/120.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-professor text-center">
+              <img src="images/professores/ricardo.jpg" alt="Foto de Ricardo Mendes">
+              <h4 class="h6 mt-2 mb-0">Ricardo Mendes</h4>
+              <div class="cargo">Líder de Treinamento Corporativo</div>
+              <p class="small text-muted">6 anos preparando executivos para negociações internacionais. DELE C2.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DEPOIMENTOS ===================== -->
+<section id="depoimentos" class="section-vox">
+  <div class="container">
+    <div class="section-label">Quem já fala outro idioma com a gente</div>
+    <h2 class="mb-5">Depoimentos</h2>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card-depoimento">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://ui-avatars.com/api/?name=Mariana+Albuquerque&background=833223&color=fdfef2&size=128" alt="Foto de Mariana Albuquerque Costa" class="me-3">
+            <div>
+              <h4 class="h6 mb-0">Mariana Albuquerque Costa</h4>
+              <small class="text-muted">14 de abril de 2026</small>
+            </div>
+          </div>
+          <div class="estrelas mb-2">★★★★★</div>
+          <p class="texto mb-0">"Sempre tive muito medo de falar inglês em público e achava que nunca conseguiria viajar sozinha. O método focado em conversação da Vox me deu a segurança que eu precisava. Viajei para a Europa e resolvi tudo sem sufoco!"</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card-depoimento">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://ui-avatars.com/api/?name=Carlos+Henrique&background=3d6b62&color=fdfef2&size=128" alt="Foto de Carlos Henrique Silveira" class="me-3">
+            <div>
+              <h4 class="h6 mb-0">Carlos Henrique Silveira</h4>
+              <small class="text-muted">Diretor Comercial · 22 de junho de 2026</small>
+            </div>
+          </div>
+          <div class="estrelas mb-2">★★★★★</div>
+          <p class="texto mb-0">"Fechei um contrato internacional importantíssimo graças às aulas corporativas. O vocabulário específico de negócios e as simulações com o professor Ricardo me deram total propriedade para negociar com fornecedores estrangeiros."</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card-depoimento">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://ui-avatars.com/api/?name=Juliana+Dornelles&background=c98a3e&color=2a1810&size=128" alt="Foto de Juliana Dornelles Martins" class="me-3">
+            <div>
+              <h4 class="h6 mb-0">Juliana Dornelles Martins</h4>
+              <small class="text-muted">05 de agosto de 2026</small>
+            </div>
+          </div>
+          <div class="estrelas mb-2">★★★★★</div>
+          <p class="texto mb-0">"Achei que não teria tempo de aprender um novo idioma, mas a flexibilidade das aulas digitais me manteve motivada do início ao fim. Hoje me sinto 100% preparada para qualquer entrevista de emprego global."</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card-depoimento">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://ui-avatars.com/api/?name=Andre+Kowalski&background=833223&color=fdfef2&size=128" alt="Foto de André Kowalski" class="me-3">
+            <div>
+              <h4 class="h6 mb-0">André Kowalski</h4>
+              <small class="text-muted">11 de maio de 2026</small>
+            </div>
+          </div>
+          <div class="estrelas mb-2">★★★★★</div>
+          <p class="texto mb-0">"Fiz o curso de espanhol para negócios antes de uma missão comercial no Chile. Cheguei lá e consegui negociar diretamente com os fornecedores, sem depender de intérprete. Recomendo demais."</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card-depoimento">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://ui-avatars.com/api/?name=Fernanda+Ribeiro&background=3d6b62&color=fdfef2&size=128" alt="Foto de Fernanda Ribeiro" class="me-3">
+            <div>
+              <h4 class="h6 mb-0">Fernanda Ribeiro</h4>
+              <small class="text-muted">30 de julho de 2026</small>
+            </div>
+          </div>
+          <div class="estrelas mb-2">★★★★★</div>
+          <p class="texto mb-0">"As aulas online encaixaram perfeitamente na minha rotina de home office. Em três meses já estava participando das reuniões em inglês da empresa sem travar."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BLOG ===================== -->
+<section id="blog" class="section-vox section-vox-alt">
+  <div class="container">
+    <div class="section-label">Conteúdo Vox</div>
+    <h2 class="mb-5">Blog</h2>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card card-blog h-100 border-0 shadow-sm">
+          <img src="images/blog/post1.png" class="card-img-top" alt="Ilustração: falar inglês com confiança">
+          <div class="card-body">
+            <h3 class="h5">Como perder o medo de falar inglês e destravar a conversação</h3>
+            <p class="meta mb-2">Letícia Dornelles (Coordenadora Pedagógica) · 01 de setembro de 2026 às 14:30</p>
+            <p class="text-muted small">O maior obstáculo para a fluência não é a falta de gramática, mas sim o medo de errar. A regra de ouro é mudar o foco da perfeição para a comunicação: fale sozinho em casa, assista séries no idioma original e não peça desculpas por errar — a segurança vem com a prática constante.</p>
+            <p class="small text-muted mb-0">Fonte: British Council Brasil</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card card-blog h-100 border-0 shadow-sm">
+          <img src="images/blog/post2-c.webp" class="card-img-top" alt="Ilustração: hello em vários idiomas ao redor de um globo">
+          <div class="card-body">
+            <h3 class="h5">O impacto do bilinguismo na carreira profissional e salários</h3>
+            <p class="meta mb-2">Ricardo Mendes (Líder de Treinamento Corporativo) · 28 de agosto de 2026 às 09:15</p>
+            <p class="text-muted small">Dominar um segundo idioma deixou de ser diferencial e passou a ser requisito básico no mercado global. Profissionais fluentes em inglês ou espanhol podem ter incremento salarial expressivo, além de acesso a projetos multinacionais e vagas remotas em moedas mais fortes.</p>
+            <p class="small text-muted mb-0">Fonte: portal de carreiras Catho</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTATO ===================== -->
+<section id="contato" class="section-vox">
+  <div class="container">
+    <div class="section-label">Fale com a gente</div>
+    <h2 class="mb-5">Contato</h2>
+
+    <div class="row g-5">
+      <div class="col-lg-7">
+        <form>
+          <div class="mb-3">
+            <label for="nomeContato" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nomeContato" placeholder="Seu nome completo" required>
+          </div>
+          <div class="mb-3">
+            <label for="emailContato" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="emailContato" placeholder="voce@email.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensagemContato" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagemContato" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-vox px-4">Enviar</button>
+        </form>
+      </div>
+
+      <div class="col-lg-5">
+        <h3 class="h5 mb-3">Informações de contato</h3>
+        <ul class="list-unstyled info-contato">
+          <li><i class="bi bi-building"></i> <span>Vox Idiomas</span></li>
+          <li><i class="bi bi-envelope-fill"></i> <span>contato@voxidiomas.com.br</span></li>
+          <li><i class="bi bi-telephone-fill"></i> <span>(51) 99554-3079</span></li>
+          <li><i class="bi bi-whatsapp"></i> <span><a href="https://wa.me/5551995543079" target="_blank" rel="noopener">Conversar no WhatsApp</a></span></li>
+          <li><i class="bi bi-geo-alt-fill"></i> <span>Avenida Nereu Ramos, nº 3777-D, Bairro Seminário, Chapecó - SC, CEP 89813-000</span></li>
+        </ul>
+
+        <h3 class="h6 mt-4 mb-3">Redes sociais</h3>
+        <a href="#" class="social-icon" aria-label="Instagram da Vox Idiomas"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="social-icon" aria-label="Facebook da Vox Idiomas"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="social-icon" aria-label="YouTube da Vox Idiomas"><i class="bi bi-youtube"></i></a>
+        <a href="https://wa.me/5551995543079" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp da Vox Idiomas"><i class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer-vox py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h6>Vox Idiomas</h6>
+        <p class="small">Seja uma pessoa 100% preparada para qualquer ocasião. Escola de idiomas focada em conversação real, em Chapecó - SC.</p>
+      </div>
+      <div class="col-md-4">
+        <h6>Navegação</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#empresa">Empresa</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6>Contato</h6>
+        <ul class="list-unstyled small">
+          <li>(51) 99554-3079</li>
+          <li>contato@voxidiomas.com.br</li>
+          <li>Chapecó - SC</li>
+        </ul>
+      </div>
+    </div>
+    <div class="dev-credit text-center">
+      &copy; 2026 Vox Idiomas. Todos os direitos reservados. — Site desenvolvido por <strong>Carlos Eduardo Bento</strong>.
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5551995543079" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Falar no WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  var heroCarouselEl = document.getElementById('heroCarousel');
+  var heroCarousel = bootstrap.Carousel.getOrCreateInstance(heroCarouselEl);
+  var heroCarouselInner = heroCarouselEl.querySelector('.carousel-inner');
+  heroCarouselInner.addEventListener('click', function () {
+    heroCarousel.next();
+  });
+</script>
+</body>
+</html>

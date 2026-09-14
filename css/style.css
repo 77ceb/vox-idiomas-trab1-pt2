@@ -1,0 +1,345 @@
+/* ==========================================================================
+   Vox Idiomas — estilos de identidade visual
+   ========================================================================== */
+
+:root {
+  --vox-primary: #833223;      /* terracota — cor primária da marca */
+  --vox-primary-dark: #5e2419; /* variação escura p/ hover e navbar */
+  --vox-cream: #fdfef2;        /* cor secundária — fundo claro */
+  --vox-ink: #2a1810;          /* texto principal, tom café escuro */
+  --vox-gold: #c98a3e;         /* dourado quente — destaques e CTAs */
+  --vox-teal: #3d6b62;         /* verde-azulado — segundo acento */
+  --vox-muted: #7a6a5d;        /* cinza quente para textos secundários */
+  --bs-body-font-family: 'Work Sans', system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--vox-cream);
+  color: var(--vox-ink);
+}
+
+h1, h2, h3, h4, .display-headline {
+  font-family: 'Fraunces', Georgia, serif;
+  color: var(--vox-ink);
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: var(--vox-primary);
+}
+a:hover {
+  color: var(--vox-primary-dark);
+}
+
+/* ---------- Navbar ---------- */
+.navbar-vox {
+  background-color: var(--vox-ink);
+}
+.navbar-vox .navbar-brand {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--vox-cream) !important;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.navbar-vox .navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+.navbar-vox .nav-link {
+  color: rgba(253, 254, 242, 0.85) !important;
+  font-weight: 500;
+  margin-left: 0.35rem;
+}
+.navbar-vox .nav-link:hover,
+.navbar-vox .nav-link.active {
+  color: var(--vox-gold) !important;
+}
+.btn-vox-nav {
+  background-color: var(--vox-gold);
+  color: var(--vox-ink) !important;
+  border-radius: 999px;
+  padding: 0.4rem 1.1rem !important;
+  font-weight: 600;
+}
+.btn-vox-nav:hover {
+  background-color: #b87a30;
+  color: var(--vox-ink) !important;
+}
+
+/* ---------- Botões ---------- */
+.btn-vox {
+  background-color: var(--vox-primary);
+  border-color: var(--vox-primary);
+  color: var(--vox-cream);
+  font-weight: 600;
+  border-radius: 6px;
+}
+.btn-vox:hover {
+  background-color: var(--vox-primary-dark);
+  border-color: var(--vox-primary-dark);
+  color: var(--vox-cream);
+}
+.btn-vox-outline {
+  border: 1.5px solid var(--vox-primary);
+  color: var(--vox-primary);
+  font-weight: 600;
+  border-radius: 6px;
+  background: transparent;
+}
+.btn-vox-outline:hover {
+  background-color: var(--vox-primary);
+  color: var(--vox-cream);
+}
+
+/* ---------- Hero / Carousel ---------- */
+.carousel-vox .carousel-item {
+  height: 78vh;
+  min-height: 420px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.carousel-vox .carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(42,24,16,0.82) 0%, rgba(42,24,16,0.45) 55%, rgba(42,24,16,0.15) 100%);
+}
+.carousel-vox .carousel-caption-vox {
+  position: absolute;
+  z-index: 2;
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 620px;
+  text-align: left;
+  color: var(--vox-cream);
+}
+.carousel-vox .carousel-caption-vox .eyebrow {
+  color: var(--vox-gold);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.carousel-vox .carousel-caption-vox h1 {
+  color: var(--vox-cream);
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  line-height: 1.08;
+}
+.carousel-vox .carousel-caption-vox p {
+  color: rgba(253, 254, 242, 0.9);
+  font-size: 1.15rem;
+}
+.hero-slide-1 { background-color: #3d2a1f; background-image: linear-gradient(120deg, #3d2a1f 0%, #833223 100%); }
+.hero-slide-2 { background-color: #2f4a44; background-image: linear-gradient(120deg, #23342f 0%, #3d6b62 100%); }
+.hero-slide-3 { background-color: #4a2c1e; background-image: linear-gradient(120deg, #2a1810 0%, #6b3b26 100%); }
+
+.carousel-vox .carousel-indicators [data-bs-target] {
+  background-color: var(--vox-gold);
+}
+
+/* ---------- Seções ---------- */
+.section-vox {
+  padding: 5rem 0;
+}
+.section-vox-alt {
+  background-color: #f6ecd9;
+}
+.section-label {
+  color: var(--vox-primary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+.section-lede {
+  max-width: 640px;
+  color: var(--vox-muted);
+}
+
+/* ---------- Cards de Serviço ---------- */
+.card-servico {
+  border: none;
+  border-top: 4px solid var(--vox-primary);
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(42, 24, 16, 0.08);
+  height: 100%;
+}
+.card-servico .card-img-top {
+  height: 190px;
+  object-fit: contain;
+  background: #fbf6ea;
+  padding: 1.5rem;
+}
+.card-servico .preco {
+  font-family: 'Fraunces', serif;
+  color: var(--vox-primary);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* ---------- Cards de Profissionais ---------- */
+.card-professor img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.card-professor .cargo {
+  color: var(--vox-teal);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* ---------- Depoimentos ---------- */
+.card-depoimento {
+  background: #fff;
+  border: 1px solid #ece1cc;
+  border-radius: 4px;
+  padding: 1.75rem;
+  height: 100%;
+}
+.card-depoimento img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card-depoimento .estrelas {
+  color: var(--vox-gold);
+  letter-spacing: 2px;
+}
+.card-depoimento .texto {
+  font-style: italic;
+  color: var(--vox-ink);
+}
+
+/* ---------- Accordion (Missão / Visão / Valores) ---------- */
+.accordion-vox .accordion-button {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  color: var(--vox-ink);
+  background-color: #fff;
+}
+.accordion-vox .accordion-button:not(.collapsed) {
+  color: var(--vox-primary);
+  background-color: #f6ecd9;
+  box-shadow: none;
+}
+.accordion-vox .accordion-button:focus {
+  box-shadow: none;
+  border-color: var(--vox-primary);
+}
+
+/* ---------- Blog ---------- */
+.card-blog img {
+  height: 210px;
+  object-fit: cover;
+}
+.card-blog .meta {
+  color: var(--vox-muted);
+  font-size: 0.85rem;
+}
+
+/* ---------- Contato ---------- */
+.info-contato li {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+.info-contato i {
+  color: var(--vox-primary);
+  font-size: 1.2rem;
+  margin-top: 0.15rem;
+}
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--vox-primary);
+  color: var(--vox-cream) !important;
+  margin-right: 0.5rem;
+}
+.social-icon:hover {
+  background: var(--vox-primary-dark);
+}
+
+/* ---------- WhatsApp flutuante ---------- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1050;
+  background-color: #25D366;
+  color: #fff;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}
+.whatsapp-float:hover {
+  background-color: #1ebe57;
+  color: #fff;
+}
+
+/* ---------- Footer ---------- */
+footer.footer-vox {
+  background-color: var(--vox-ink);
+  color: rgba(253, 254, 242, 0.75);
+}
+footer.footer-vox a {
+  color: var(--vox-cream);
+}
+footer.footer-vox h6 {
+  color: var(--vox-gold);
+  font-family: 'Fraunces', serif;
+}
+footer .dev-credit {
+  border-top: 1px solid rgba(253,254,242,0.15);
+  padding-top: 1rem;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* ---------- Página de serviço ---------- */
+.hero-servico {
+  background-color: var(--vox-ink);
+  background-image: linear-gradient(120deg, #2a1810 0%, #6b3b26 100%);
+  color: var(--vox-cream);
+  padding: 3.5rem 0;
+}
+.hero-servico h1 {
+  color: var(--vox-cream);
+}
+.hero-servico .breadcrumb a { color: var(--vox-gold); }
+.hero-servico .breadcrumb-item.active { color: rgba(253,254,242,0.7); }
+.hero-servico .breadcrumb-item + .breadcrumb-item::before { color: rgba(253,254,242,0.5); }
+
+.tabela-detalhes th {
+  color: var(--vox-primary);
+  font-weight: 600;
+  width: 40%;
+  background-color: #f6ecd9;
+}
+
+.ratio-video {
+  border-radius: 4px;
+  overflow: hidden;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 10px rgba(42,24,16,0.15);
+}
+
+@media (max-width: 767.98px) {
+  .carousel-vox .carousel-item { height: 100vh; min-height: 520px; }
+  .carousel-vox .carousel-caption-vox { left: 6%; right: 6%; max-width: none; }
+}
